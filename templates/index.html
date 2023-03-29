@@ -1,6 +1,9 @@
 {% extends 'bootstrap/base.html' %}
-
 {% block title %}Coffee and Wifi{% endblock %}
+{% block styling %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+{% endblock %}
 
 {% block content %}
 <div class="jumbotron text-center">
